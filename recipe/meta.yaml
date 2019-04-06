@@ -1,6 +1,6 @@
 {% set name = "authlib" %}
-{% set version = "0.10" %}
-{% set sha256 = "b61c6c6fd230c4ba8602fd85ee9a40e6dc859387699a1cd1f7247c4b109dcc17" %}
+{% set version = "0.11" %}
+{% set sha256 = "9741db6de2950a0a5cefbdb72ec7ab12f7e9fd530ff47219f1530e79183cbaaf" %}
 
 package:
   name: {{ name|lower }}
