@@ -1,6 +1,6 @@
 {% set name = "authlib" %}
-{% set version = "0.10" %}
-{% set sha256 = "b61c6c6fd230c4ba8602fd85ee9a40e6dc859387699a1cd1f7247c4b109dcc17" %}
+{% set version = "0.12.1" %}
+{% set sha256 = "40728195efe915c96209a6a57ad6b5565a951bb469f01bd0c38ea13a0bac6c68" %}
 
 package:
   name: {{ name|lower }}
@@ -40,4 +40,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - chrisburr
     - markfennema
