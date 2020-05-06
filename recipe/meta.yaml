@@ -1,6 +1,6 @@
 {% set name = "authlib" %}
-{% set version = "0.14.1" %}
-{% set sha256 = "89d55b14362f8acee450f9d153645e438e3a38be99b599190718c4406f575b05" %}
+{% set version = "0.14.2" %}
+{% set sha256 = "94958661bd9e1c236a43719f00c5e6da2b7a773bd7350961be9fd9f3298da658" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'The ultimate Python library in building OAuth and OpenID Connect servers. JWS,JWE,JWK,JWA,JWT included. https://authlib.org/'
+  summary: The ultimate Python library in building OAuth and OpenID Connect servers. JWS,JWE,JWK,JWA,JWT included. https://authlib.org/
 
   doc_url: https://docs.authlib.org/en/latest/
   dev_url: https://github.com/lepture/authlib
