@@ -1,6 +1,6 @@
 {% set name = "authlib" %}
-{% set version = "0.15.3" %}
-{% set sha256 = "7dde11ba45db51e97169c261362fab3193073100b7387e60c159db1eec470bbc" %}
+{% set version = "0.15.4" %}
+{% set sha256 = "37df3a2554bc6fe0da3cc6848c44fac2ae40634a7f8fc72543947f4330b26464" %}
 
 package:
   name: {{ name|lower }}
@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
     - requests
     - cryptography
 
