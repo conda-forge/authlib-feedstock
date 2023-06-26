@@ -1,11 +1,11 @@
-About authlib
-=============
+About authlib-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/authlib-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lepture/authlib
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/authlib-feedstock/blob/main/LICENSE.txt)
 
 Summary: The ultimate Python library in building OAuth and OpenID Connect servers. JWS,JWE,JWK,JWA,JWT included. https://authlib.org/
 
