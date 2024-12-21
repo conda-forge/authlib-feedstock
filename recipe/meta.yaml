@@ -1,13 +1,13 @@
 {% set name = "authlib" %}
-{% set version = "1.3.0" %}
-{% set sha256 = "959ea62a5b7b5123c5059758296122b57cd2585ae2ed1c0622c21b371ffdae06" %}
+{% set version = "1.4.0" %}
+{% set sha256 = "1c1e6608b5ed3624aeeee136ca7f8c120d6f51f731aa152b153d54741840e1f2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|capitalize }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
