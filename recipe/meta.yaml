@@ -23,6 +23,7 @@ requirements:
     - python >={{ python_min }}
     - requests
     - cryptography
+    - joserfc>=1.6.0
 
 test:
   requires:
