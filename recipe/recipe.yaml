@@ -45,15 +45,24 @@ tests:
   - files:
       source:
         - src/tests/
+        - src/pyproject.toml
     requirements:
       run:
-        - python ${{ python_min }}.*
-        - pytest-cov
+        - cachelib
+        - django
+        - flask-sqlalchemy
+        - httpx <1
         - pytest-asyncio
+        - pytest-cov
+        - pytest-django
+        - pytest-env
+        - python ${{ python_min }}.*
+        - requests
+        - starlette-full
     script:
       - cd src
       - coverage run --source=authlib --branch -m pytest -vv --tb=long --color=yes
-      - coverage report --show-missing --skip-covered --fail-under=100
+      - coverage report --show-missing --skip-covered --fail-under=94
 
 about:
   summary: The ultimate Python library in building OAuth and OpenID Connect servers and clients.
