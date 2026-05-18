@@ -148,4 +148,5 @@ Feedstock Maintainers
 
 * [@chrisburr](https://github.com/chrisburr/)
 * [@markfennema](https://github.com/markfennema/)
+* [@xylar](https://github.com/xylar/)
 
