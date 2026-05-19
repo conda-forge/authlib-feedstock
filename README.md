@@ -3,15 +3,15 @@ About authlib-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/authlib-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/lepture/authlib
+Home: https://pypi.org/project/authlib
 
 Package license: BSD-3-Clause
 
-Summary: The ultimate Python library in building OAuth and OpenID Connect servers. JWS,JWE,JWK,JWA,JWT included. https://authlib.org/
+Summary: The ultimate Python library in building OAuth and OpenID Connect servers and clients.
 
-Development: https://github.com/lepture/authlib
+Development: https://github.com/authlib/authlib
 
-Documentation: https://docs.authlib.org/en/latest/
+Documentation: https://docs.authlib.org/
 
 Current build status
 ====================
@@ -148,4 +148,5 @@ Feedstock Maintainers
 
 * [@chrisburr](https://github.com/chrisburr/)
 * [@markfennema](https://github.com/markfennema/)
+* [@xylar](https://github.com/xylar/)
 
