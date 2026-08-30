@@ -26,14 +26,14 @@ build:
 
 requirements:
   host:
-    - pip
     - python ${{ python_min }}.*
+    - pip
     - setuptools
     - wheel
   run:
-    - cryptography
-    - joserfc >=1.6.0
     - python >=${{ python_min }}
+    - cryptography >=45.0.1
+    - joserfc >=1.6.1
 
 tests:
   - python:
@@ -42,6 +42,7 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - ${{ python_check_max }}.*
+        - "*"
   - files:
       source:
         - src/tests/
