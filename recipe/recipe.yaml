@@ -2,8 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.7.2"
-  python_check_max: "3.14"
+  version: "1.8.0"
 
 package:
   name: authlib
@@ -12,13 +11,13 @@ package:
 source:
   - target_directory: dist
     url: https://pypi.org/packages/source/a/authlib/authlib-${{ version }}.tar.gz
-    sha256: 2cea25fefcd4e7173bdf1372c0afc265c8034b23a8cd5dcb6a9164b826c64231
+    sha256: f3ecd5f1da737262fb53bf1a4d95c4ea1ad9dd509316587a255c99ab1838a4f0
   - target_directory: src
     url: https://github.com/authlib/authlib/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: 939d7d4c1ea10e3747b03cc76c478f5158657a32645a496be38100c927ee6a4c
+    sha256: 216e3085ff2b371100acbb7e8a3bfe6e403ac138dababb3346b6147c3564ca56
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - cd dist
@@ -26,14 +25,14 @@ build:
 
 requirements:
   host:
-    - pip
     - python ${{ python_min }}.*
+    - pip
     - setuptools
     - wheel
   run:
-    - cryptography
-    - joserfc >=1.6.0
     - python >=${{ python_min }}
+    - cryptography >=45.0.1
+    - joserfc >=1.6.1
 
 tests:
   - python:
@@ -41,7 +40,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - ${{ python_check_max }}.*
+        - "*"
   - files:
       source:
         - src/tests/
