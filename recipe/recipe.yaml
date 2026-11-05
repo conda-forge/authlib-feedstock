@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.9.4"
+  version: "1.9.5"
 
 package:
   name: authlib
@@ -11,10 +11,10 @@ package:
 source:
   - target_directory: dist
     url: https://pypi.org/packages/source/a/authlib/authlib-${{ version }}.tar.gz
-    sha256: f55a25f561f1f157ceca64da9df776f469f23715ac89ee338aa2f83dc9774e13
+    sha256: 3f031d5e9b6486089e91e8f7f1b68f36275f3151c66460d650fc90d420545fd7
   - target_directory: src
     url: https://github.com/authlib/authlib/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: f1f6bec3ff30a0ed1d0e8d914c5ecd117b5ed9e19c51ff61b549b65965cd07df
+    sha256: 25f56d574e4e57b0b4efef013452c1fda7f38ac2f267d38d6bc7b833b4c09861
 
 build:
   number: 0
